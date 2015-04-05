@@ -61,20 +61,30 @@ public class DBController {
 	}
 
 	public Product getProductByBarcode(String id) {
+		/*open();
 		Cursor mCursor = db.query(true, PRODUCTS_TABLE, new String[] {
 				KEY_ROWID, KEY_NAME_EN}, KEY_ROWID + "=" + id,
 				null, null, null, null, null);
 		
 		if (mCursor != null) {
 			if(mCursor.moveToFirst()) {
+				System.err.println("FOUND!!!!");
 				Product p = new Product();
 				p.setId(id);
 				p.setName(mCursor.getString(1));
 				p.setDescription(mCursor.getString(2));
+				close();
 				return p;
 			}
 		}
+		close();*/
+		Product p = new Product();
+		p.setId(id);
+		p.setName("Charger");
+		p.setDescription("Sony");
 		
-		return null;
+		return p;
+		//return null;
+		
 	}
 }

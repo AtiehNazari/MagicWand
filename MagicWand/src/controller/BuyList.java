@@ -14,7 +14,13 @@ public class BuyList {
 		items.remove(i);
 	}
 
+	public int size(){
+		return items.size();
+	}
 	
+	public ListItem getItem(int i){
+		return items.get(i);
+	}
 	
 	
 }

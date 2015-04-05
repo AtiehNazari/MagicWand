@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	    
+	<LinearLayout 
+	    android:layout_width = "match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+    <TextView
+        android:id="@+id/id_warning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        
+        android:text="you requested to add the below item to your list" />
+
+    <TextView
+        android:id="@+id/id_wanted_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <EditText
+        android:id="@+id/id_count"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+    
+    <ImageView
+        android:id="@+id/id_admit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+       	android:src="@drawable/pink" />
+
+    <ImageView
+        android:id="@+id/id_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+       	android:src="@drawable/yellow" />
+	</LinearLayout>
+
+</RelativeLayout>

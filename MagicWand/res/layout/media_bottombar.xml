@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_media_bottombar"
+    android:orientation="horizontal" >
+    
+    <ImageView
+        android:id="@+id/id_add_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight = "1"
+        android:src="@drawable/ic_action_search" />
+    <ImageView
+        android:id="@+id/id_pick_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight = "1"
+        android:src="@drawable/ic_action_cloud" />
+    <ImageView
+        android:id="@+id/id_delete_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight = "1"
+        android:src="@drawable/ic_action_search" />
+    
+
+</LinearLayout>
